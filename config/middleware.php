@@ -19,8 +19,8 @@ return function (App $app) {
 
     $app->add(new Tuupola\Middleware\JwtAuthentication([
         "secure" => false,
-        //"relaxed" => ["localhost", "slimapidevs"],
-        "path" => "/slimapidevs/admin", /* or ["/api", "/admin"] */
+        //"relaxed" => ["localhost", "workanaapidevs"],
+        "path" => "/workanaapidevs/admin", /* or ["/api", "/admin"] */
         "header" => "X-Token", 
         "attribute" => "jwt", 
         "secret" => "supersecretkeyyoushouldnotcommittogithub",
