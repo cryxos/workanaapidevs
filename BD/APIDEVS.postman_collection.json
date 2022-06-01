@@ -1,0 +1,510 @@
+{
+	"info": {
+		"_postman_id": "20603f11-1091-48bf-a7a4-cfb193fffe8f",
+		"name": "FIVER APIDEVS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9035265"
+	},
+	"item": [
+		{
+			"name": "GUIDE",
+			"item": [
+				{
+					"name": "LISTA GUIDE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/slimapidevs/guide",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"slimapidevs",
+								"guide"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET PATH",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/slimapidevs/guide/guia-eliot",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"slimapidevs",
+								"guide",
+								"guia-eliot"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREAR GUIDE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name_guide\": \"Curso Fibonacci\",\r\n    \"desc_guide\": \"texto texto texto texto texto texto texto texto texto texto\", \r\n    \"path_guide\": \"/curso-fibonacci\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/slimapidevs/guide",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"slimapidevs",
+								"guide"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DESACTIVAR",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/slimapidevs/guide/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"slimapidevs",
+								"guide",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET BY ID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/slimapidevs/guide/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"slimapidevs",
+								"guide",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MODULE",
+			"item": [
+				{
+					"name": "LISTA",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/slimapidevs/module",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"slimapidevs",
+								"module"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET PATH",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/slimapidevs/module/elliot-modulo-1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"slimapidevs",
+								"module",
+								"elliot-modulo-1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREAR",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_guide\" \t  : 1,\r\n    \"title_module\": \"Modulo III\",\r\n    \"title_secondary\": \"Modulo III\",\r\n    \"desc_module\" : \"Usted desarrollará una sólida base de la teoría Elliott Wave, dominará los patrones\",\r\n    \"path_module\" : \"elliot-modulo-3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/slimapidevs/module",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"slimapidevs",
+								"module"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DESACTIVAR by ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/slimapidevs/module/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"slimapidevs",
+								"module",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SECTION",
+			"item": [
+				{
+					"name": "LISTA SECTION",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/slimapidevs/section",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"slimapidevs",
+								"section"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREAR SECTION",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"id_module\"     :1 ,\t\r\n    \"title_section\" :\"La Guía\",\r\n    \"desc_section\"  :\"desc_section\",\r\n    \"path_section\"  :\"#section-1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/slimapidevs/section",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"slimapidevs",
+								"section"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DESACTIVAR by ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/slimapidevs/section/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"slimapidevs",
+								"section",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "IMAGE",
+			"item": [
+				{
+					"name": "LISTA IMAGE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/slimapidevs/image",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"slimapidevs",
+								"image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREAR IMAGE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \r\n    \"target\": \"La teoría 1938\", \r\n    \"origin\": \"../upload/elliot/elliot-m1-1.png\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/slimapidevs/image",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"slimapidevs",
+								"image"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "USER",
+			"item": [
+				{
+					"name": "CREAR USUARIO",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/slimapidevs/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"slimapidevs",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "USERS TOKEN",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "jwt",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.W3siaWF0IjoiMTQyODgxOTk0MSIsImV4cCI6IjE3NDQzNTI3NDEiLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiLCJkZWxldGUiXX1d.dhcWOSS7pdN-SJSpI8U3KJCp6Pa4pc-VvZrP2ISQ8Iw",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost/slimapidevs/admin/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"slimapidevs",
+								"admin",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "WEB",
+			"item": [
+				{
+					"name": "MODULO PATH",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/slimapidevs/web/g/guia-eliot",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"slimapidevs",
+								"web",
+								"g",
+								"guia-eliot"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar todos los modulos By Guide path",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/slimapidevs/web/g/guia-eliot",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"slimapidevs",
+								"web",
+								"g",
+								"guia-eliot"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TEST",
+			"item": [
+				{
+					"name": "USERS TOKEN",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "jwt",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.W3siaWF0IjoiMTQyODgxOTk0MSIsImV4cCI6IjE3NDQzNTI3NDEiLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiLCJkZWxldGUiXX1d.dhcWOSS7pdN-SJSpI8U3KJCp6Pa4pc-VvZrP2ISQ8Iw",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost/slimapidevs/admin/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"slimapidevs",
+								"admin",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AUTH",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"cryxos\",\r\n    \"password_user\": \"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/slimapidevs/web/g/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"slimapidevs",
+						"web",
+						"g",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
